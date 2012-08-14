@@ -4,31 +4,39 @@ Convert text with ANSI escape sequences to styled HTML.
 
 ## Example
 
-    test[1mBold[32mGreen[31mRed[0mNone
+```
+test[1mBold[32mGreen[31mRed[0mNone
+```
     
 becomes
 
-    test<span style="font-weight:bold">Bold</span><span style="font-weight:bold;color:green">Green</span><span style="font-weight:bold;color:red">Red</span>None
+```html
+test<span style="font-weight:bold">Bold</span><span style="font-weight:bold;color:green">Green</span><span style="font-weight:bold;color:red">Red</span>None
+```
 
 ## Usage
 
 In Node.js:
 
-    var ansi2html = require('ansi2html')
+```js
+var ansi2html = require('ansi2html')
 
-    console.log(ansi2html("test[1mBold"))
+console.log(ansi2html("test[1mBold"))
+```
 
 In the browser:
 
-    <pre id="test"></pre>
-    <script type="text/javascript" src="ansi2html.js"></script>
-    <script type="text/javascript">
-    document.getElementById('test').innerHTML = ansi2html("test[1mBold")
-    </script>
+```js
+<pre id="test"></pre>
+<script type="text/javascript" src="ansi2html.js"></script>
+<script type="text/javascript">
+document.getElementById('test').innerHTML = ansi2html("test[1mBold")
+</script>
+```
 
 That's right, ansi2html.js works in Node *and* in the browser, in more or less the same way.
 
-## License
+## MIT License
 
 Copyright (C) 2011 by Isaac Wolkerstorfer
 
