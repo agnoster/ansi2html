@@ -1,0 +1,20 @@
+{ "author": "Isaac Wolkerstorfer <agnoster@gmail.com> (http://agnoster.net/)"
+, "name": "ansi2html"
+, "description": "Convert text with ANSI escape sequences to HTML markup"
+, "version": "0.0.0"
+, "homepage": "https://github.com/agnoster/ansi2html-js"
+, "repository": 
+  { "url": ""
+  }
+, "main": "./lib/ansi2html"
+, "engines": 
+  { "node": "~0.4.7"
+  }
+, "dependencies": {}
+, "devDependencies": 
+  { "vows": "~0.5.8"
+  }
+, "scripts":
+  { "test": "./node_modules/vows/bin/vows test/*_spec.js --spec"
+  }
+}
