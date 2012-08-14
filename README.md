@@ -1,4 +1,5 @@
-# ansi2html.js
+# ansi2html.js [![build status](https://secure.travis-ci.org/agnoster/ansi2html.png?branch=master)](http://travis-ci.org/agnoster/ansi2html)
+
 
 Convert text with ANSI escape sequences to styled HTML.
 

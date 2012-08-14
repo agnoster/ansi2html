@@ -8,7 +8,7 @@
   }
 , "main": "./lib/ansi2html"
 , "engines": 
-  { "node": "~0.4.7"
+  { "node": ">0.4"
   }
 , "dependencies": {}
 , "devDependencies": 
