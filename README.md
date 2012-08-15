@@ -37,6 +37,12 @@ document.getElementById('test').innerHTML = ansi2html("test[1mBold")
 
 That's right, ansi2html.js works in Node *and* in the browser, in more or less the same way.
 
+## Supported
+
+* bold
+* underline
+* foreground & background color
+
 ## MIT License
 
 Copyright (C) 2011 by Isaac Wolkerstorfer
