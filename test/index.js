@@ -4,7 +4,7 @@ var ansi2html = require('../lib/')
 
 function makeBatchFromTestCases(testCases) {
   function makeTest(input, expected) {
-    var test = { topic: function() { return ansi2html(input) } }
+    var test = { topic: function() { return (new ansi2html(input)).render(); } }
     test['we get "' + expected + '"'] = function(topic) { assert.equal(topic, expected) }
     return test
   }
