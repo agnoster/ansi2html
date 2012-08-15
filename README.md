@@ -22,7 +22,7 @@ In Node.js:
 ```js
 var ansi2html = require('ansi2html')
 
-console.log(ansi2html("test[1mBold"))
+console.log((new ansi2html("test[1mBold")).render())
 ```
 
 In the browser:
@@ -31,7 +31,7 @@ In the browser:
 <pre id="test"></pre>
 <script type="text/javascript" src="ansi2html.js"></script>
 <script type="text/javascript">
-document.getElementById('test').innerHTML = ansi2html("test[1mBold")
+document.getElementById('test').innerHTML = (new ansi2html("test[1mBold")).render()
 </script>
 ```
 
