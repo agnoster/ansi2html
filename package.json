@@ -2,11 +2,11 @@
 , "name": "ansi2html"
 , "description": "Convert text with ANSI escape sequences to HTML markup"
 , "version": "0.0.0"
-, "homepage": "https://github.com/agnoster/ansi2html-js"
+, "homepage": "https://github.com/agnoster/ansi2html"
 , "repository": 
   { "url": ""
   }
-, "main": "./lib/ansi2html"
+, "main": "./lib/"
 , "engines": 
   { "node": ">0.4"
   }
@@ -15,6 +15,6 @@
   { "vows": "~0.5.8"
   }
 , "scripts":
-  { "test": "./node_modules/vows/bin/vows test/*_spec.js --spec"
+  { "test": "./node_modules/vows/bin/vows test/* --spec"
   }
 }

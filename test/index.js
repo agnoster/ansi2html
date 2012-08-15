@@ -1,4 +1,4 @@
-var ansi2html = require('../lib/ansi2html')
+var ansi2html = require('../lib/')
   , vows = require('vows')
   , assert = require('assert')
 
