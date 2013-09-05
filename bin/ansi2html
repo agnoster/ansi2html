@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+var data = ''
+  , ansi2html = require('../lib/index.js')
+
+process.stdin.on('data', function(chunk) {
+  data += chunk
+})
+
+process.stdin.on('end', function() {
+  // strip escape characters (e.g. git log --color | ansi2html)
+  console.log(ansi2html(data.replace(/\u001B/g, '')))
+})
+
+process.stdin.resume()
