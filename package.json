@@ -1,23 +1,24 @@
-{ "author": "Isaac Wolkerstorfer <agnoster@gmail.com> (http://agnoster.net/)"
-, "name": "ansi2html"
-, "description": "Convert text with ANSI escape sequences to HTML markup"
-, "version": "0.0.0"
-, "homepage": "https://github.com/agnoster/ansi2html"
-, "bin":
-  { "ansi2html": "./bin/ansi2html"
-  }
-, "repository":
-  { "url": ""
-  }
-, "main": "./lib/"
-, "engines":
-  { "node": ">0.4"
-  }
-, "dependencies": {}
-, "devDependencies":
-  { "vows": "~0.5.8"
-  }
-, "scripts":
-  { "test": "./node_modules/vows/bin/vows test/* --spec"
+{
+  "author": "Isaac Wolkerstorfer <agnoster@gmail.com> (http://agnoster.net/)",
+  "name": "ansi2html",
+  "description": "Convert text with ANSI escape sequences to HTML markup",
+  "version": "0.0.1",
+  "homepage": "https://github.com/agnoster/ansi2html",
+  "bin": {
+    "ansi2html": "./bin/ansi2html"
+  },
+  "repository": {
+    "url": ""
+  },
+  "main": "./lib/",
+  "engines": {
+    "node": ">0.4"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vows": "~0.5.8"
+  },
+  "scripts": {
+    "test": "./node_modules/vows/bin/vows test/* --spec"
   }
 }
