@@ -3,15 +3,18 @@
 , "description": "Convert text with ANSI escape sequences to HTML markup"
 , "version": "0.0.0"
 , "homepage": "https://github.com/agnoster/ansi2html"
-, "repository": 
+, "bin":
+  { "ansi2html": "./bin/ansi2html"
+  }
+, "repository":
   { "url": ""
   }
 , "main": "./lib/"
-, "engines": 
+, "engines":
   { "node": ">0.4"
   }
 , "dependencies": {}
-, "devDependencies": 
+, "devDependencies":
   { "vows": "~0.5.8"
   }
 , "scripts":
