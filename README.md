@@ -8,7 +8,7 @@ Convert text with ANSI escape sequences to styled HTML.
 ```
 test[1mBold[32mGreen[31mRed[0mNone
 ```
-    
+
 becomes
 
 ```html
@@ -33,6 +33,12 @@ In the browser:
 <script type="text/javascript">
 document.getElementById('test').innerHTML = ansi2html("test[1mBold")
 </script>
+```
+
+In the terminal:
+
+```bash
+git log --color | ansi2html > result.html
 ```
 
 That's right, ansi2html.js works in Node *and* in the browser, in more or less the same way.
