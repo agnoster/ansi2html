@@ -27,6 +27,6 @@ suite.addBatch(makeBatchFromTestCases(
 , 'test[42mGreenBG': 'test<span style="background:green">GreenBG</span>'
 , 'test[32mString[0mNone': 'test<span style="color:green">String</span>None'
 , 'test[32mString[mNone': 'test<span style="color:green">String</span>None'
+, 'test[90mString[mNone': 'test<span style="color:gray">String</span>None'
 }))
 suite.export(module)
-
